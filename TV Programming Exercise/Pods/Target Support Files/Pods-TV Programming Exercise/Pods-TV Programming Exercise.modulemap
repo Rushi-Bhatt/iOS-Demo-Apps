@@ -1,0 +1,6 @@
+framework module Pods_TV_Programming_Exercise {
+  umbrella header "Pods-TV Programming Exercise-umbrella.h"
+
+  export *
+  module * { export * }
+}

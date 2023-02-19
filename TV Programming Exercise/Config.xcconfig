@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  TV Programming Exercise
+//
+//  Created by Rushi Bhatt on 4/12/22.
+//  Copyright © 2022 Jeffery Kuo. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = 4f34c339d8bdc6ab7df92feee933b3d2

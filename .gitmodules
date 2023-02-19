@@ -1,0 +1,3 @@
+[submodule "NYC-Schools"]
+	path = NYC-Schools
+	url = https://github.com/Rushi-Bhatt/NYC-Schools.git

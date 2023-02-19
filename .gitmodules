@@ -1,3 +1,6 @@
 [submodule "NYC-Schools"]
 	path = NYC-Schools
 	url = https://github.com/Rushi-Bhatt/NYC-Schools.git
+[submodule "Carta-Challenge"]
+	path = Carta-Challenge
+	url = https://github.com/Rushi-Bhatt/Carta-Challenge.git

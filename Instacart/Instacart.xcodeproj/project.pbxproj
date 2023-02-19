@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1361139042CF973AEB395FC4 /* Pods_Instacart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC572E0B2182E3ADC7AFA1C7 /* Pods_Instacart.framework */; };
+		B2FFEA1FA2096CF069040C9E /* Pods_InstacartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027D42E9820FEB173E95555F /* Pods_InstacartTests.framework */; };
+		BDA1747D81F017D400E24ACB /* Pods_Instacart_InstacartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11407083FD352E63E7B61F4A /* Pods_Instacart_InstacartUITests.framework */; };
+		D87BF78B2980CBDE00857DB4 /* ImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87BF78A2980CBDE00857DB4 /* ImageCellViewModel.swift */; };
+		D894D3482980498500FCD27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D3472980498500FCD27C /* AppDelegate.swift */; };
+		D894D34A2980498500FCD27C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D3492980498500FCD27C /* SceneDelegate.swift */; };
+		D894D34C2980498500FCD27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D34B2980498500FCD27C /* ViewController.swift */; };
+		D894D3512980498C00FCD27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D894D3502980498C00FCD27C /* Assets.xcassets */; };
+		D894D3542980498C00FCD27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D894D3522980498C00FCD27C /* LaunchScreen.storyboard */; };
+		D894D35F2980498D00FCD27C /* InstacartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D35E2980498D00FCD27C /* InstacartTests.swift */; };
+		D894D3692980498D00FCD27C /* InstacartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D3682980498D00FCD27C /* InstacartUITests.swift */; };
+		D894D36B2980498D00FCD27C /* InstacartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D36A2980498D00FCD27C /* InstacartUITestsLaunchTests.swift */; };
+		D894D37D29804AD100FCD27C /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D37C29804AD100FCD27C /* Answer.swift */; };
+		D894D37F29804AEC00FCD27C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D37E29804AEC00FCD27C /* Question.swift */; };
+		D894D38129804B2400FCD27C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D38029804B2400FCD27C /* ViewModel.swift */; };
+		D894D38429804B9D00FCD27C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D38329804B9D00FCD27C /* Service.swift */; };
+		D894D38729804E2100FCD27C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D38629804E2100FCD27C /* Network.swift */; };
+		D894D38A29806A5C00FCD27C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D38929806A5C00FCD27C /* Router.swift */; };
+		D894D38D29806FE800FCD27C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D894D38C29806FE800FCD27C /* ImageCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D894D35B2980498D00FCD27C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D894D33C2980498400FCD27C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D894D3432980498400FCD27C;
+			remoteInfo = Instacart;
+		};
+		D894D3652980498D00FCD27C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D894D33C2980498400FCD27C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D894D3432980498400FCD27C;
+			remoteInfo = Instacart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027D42E9820FEB173E95555F /* Pods_InstacartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstacartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11407083FD352E63E7B61F4A /* Pods_Instacart_InstacartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instacart_InstacartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1235A530949AA8890A58AF89 /* Pods-Instacart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instacart.debug.xcconfig"; path = "Target Support Files/Pods-Instacart/Pods-Instacart.debug.xcconfig"; sourceTree = "<group>"; };
+		49AF8C89B1497B5D3314E6C1 /* Pods-Instacart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instacart.release.xcconfig"; path = "Target Support Files/Pods-Instacart/Pods-Instacart.release.xcconfig"; sourceTree = "<group>"; };
+		50BF1B93C005CC2E1956A400 /* Pods-InstacartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstacartTests.release.xcconfig"; path = "Target Support Files/Pods-InstacartTests/Pods-InstacartTests.release.xcconfig"; sourceTree = "<group>"; };
+		545F9DACB3EFEA300EE30F45 /* Pods-Instacart-InstacartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instacart-InstacartUITests.release.xcconfig"; path = "Target Support Files/Pods-Instacart-InstacartUITests/Pods-Instacart-InstacartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		657D9EE3A19B0465B476805D /* Pods-InstacartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstacartTests.debug.xcconfig"; path = "Target Support Files/Pods-InstacartTests/Pods-InstacartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC572E0B2182E3ADC7AFA1C7 /* Pods_Instacart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instacart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87BF78A2980CBDE00857DB4 /* ImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellViewModel.swift; sourceTree = "<group>"; };
+		D894D3442980498400FCD27C /* Instacart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instacart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D894D3472980498500FCD27C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D894D3492980498500FCD27C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D894D34B2980498500FCD27C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D894D3502980498C00FCD27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D894D3532980498C00FCD27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D894D3552980498C00FCD27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D894D35A2980498D00FCD27C /* InstacartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstacartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D894D35E2980498D00FCD27C /* InstacartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstacartTests.swift; sourceTree = "<group>"; };
+		D894D3642980498D00FCD27C /* InstacartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstacartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D894D3682980498D00FCD27C /* InstacartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstacartUITests.swift; sourceTree = "<group>"; };
+		D894D36A2980498D00FCD27C /* InstacartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstacartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D894D37C29804AD100FCD27C /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		D894D37E29804AEC00FCD27C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D894D38029804B2400FCD27C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D894D38329804B9D00FCD27C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		D894D38629804E2100FCD27C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D894D38929806A5C00FCD27C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D894D38C29806FE800FCD27C /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		DEAF48D6CFF3346DC3540870 /* Pods-Instacart-InstacartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instacart-InstacartUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instacart-InstacartUITests/Pods-Instacart-InstacartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D894D3412980498400FCD27C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1361139042CF973AEB395FC4 /* Pods_Instacart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D894D3572980498D00FCD27C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FFEA1FA2096CF069040C9E /* Pods_InstacartTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D894D3612980498D00FCD27C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA1747D81F017D400E24ACB /* Pods_Instacart_InstacartUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C6628C4DEE2365A08876B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1235A530949AA8890A58AF89 /* Pods-Instacart.debug.xcconfig */,
+				49AF8C89B1497B5D3314E6C1 /* Pods-Instacart.release.xcconfig */,
+				DEAF48D6CFF3346DC3540870 /* Pods-Instacart-InstacartUITests.debug.xcconfig */,
+				545F9DACB3EFEA300EE30F45 /* Pods-Instacart-InstacartUITests.release.xcconfig */,
+				657D9EE3A19B0465B476805D /* Pods-InstacartTests.debug.xcconfig */,
+				50BF1B93C005CC2E1956A400 /* Pods-InstacartTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B9C3A8941ADEBE4C453E381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC572E0B2182E3ADC7AFA1C7 /* Pods_Instacart.framework */,
+				11407083FD352E63E7B61F4A /* Pods_Instacart_InstacartUITests.framework */,
+				027D42E9820FEB173E95555F /* Pods_InstacartTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D894D33B2980498400FCD27C = {
+			isa = PBXGroup;
+			children = (
+				D894D3462980498500FCD27C /* Instacart */,
+				D894D35D2980498D00FCD27C /* InstacartTests */,
+				D894D3672980498D00FCD27C /* InstacartUITests */,
+				D894D3452980498400FCD27C /* Products */,
+				7C6628C4DEE2365A08876B34 /* Pods */,
+				9B9C3A8941ADEBE4C453E381 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D894D3452980498400FCD27C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D894D3442980498400FCD27C /* Instacart.app */,
+				D894D35A2980498D00FCD27C /* InstacartTests.xctest */,
+				D894D3642980498D00FCD27C /* InstacartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D894D3462980498500FCD27C /* Instacart */ = {
+			isa = PBXGroup;
+			children = (
+				D894D38829806A4F00FCD27C /* Router */,
+				D894D38529804E1500FCD27C /* Network */,
+				D894D38229804B9200FCD27C /* Service */,
+				D894D37B29804A8D00FCD27C /* Models */,
+				D894D37A29804A8800FCD27C /* Views */,
+				D894D37929804A8300FCD27C /* ViewModels */,
+				D894D37729804A6B00FCD27C /* Common */,
+				D894D3502980498C00FCD27C /* Assets.xcassets */,
+				D894D3522980498C00FCD27C /* LaunchScreen.storyboard */,
+				D894D3552980498C00FCD27C /* Info.plist */,
+			);
+			path = Instacart;
+			sourceTree = "<group>";
+		};
+		D894D35D2980498D00FCD27C /* InstacartTests */ = {
+			isa = PBXGroup;
+			children = (
+				D894D35E2980498D00FCD27C /* InstacartTests.swift */,
+			);
+			path = InstacartTests;
+			sourceTree = "<group>";
+		};
+		D894D3672980498D00FCD27C /* InstacartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D894D3682980498D00FCD27C /* InstacartUITests.swift */,
+				D894D36A2980498D00FCD27C /* InstacartUITestsLaunchTests.swift */,
+			);
+			path = InstacartUITests;
+			sourceTree = "<group>";
+		};
+		D894D37729804A6B00FCD27C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D894D3472980498500FCD27C /* AppDelegate.swift */,
+				D894D3492980498500FCD27C /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D894D37929804A8300FCD27C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D894D38029804B2400FCD27C /* ViewModel.swift */,
+				D87BF78A2980CBDE00857DB4 /* ImageCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D894D37A29804A8800FCD27C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D894D38B29806FD800FCD27C /* Cells */,
+				D894D34B2980498500FCD27C /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D894D37B29804A8D00FCD27C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D894D37C29804AD100FCD27C /* Answer.swift */,
+				D894D37E29804AEC00FCD27C /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D894D38229804B9200FCD27C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D894D38329804B9D00FCD27C /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D894D38529804E1500FCD27C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D894D38629804E2100FCD27C /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D894D38829806A4F00FCD27C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D894D38929806A5C00FCD27C /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D894D38B29806FD800FCD27C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D894D38C29806FE800FCD27C /* ImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D894D3432980498400FCD27C /* Instacart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D894D36E2980498D00FCD27C /* Build configuration list for PBXNativeTarget "Instacart" */;
+			buildPhases = (
+				55DF7D6BD3D45A8430F01A59 /* [CP] Check Pods Manifest.lock */,
+				D894D3402980498400FCD27C /* Sources */,
+				D894D3412980498400FCD27C /* Frameworks */,
+				D894D3422980498400FCD27C /* Resources */,
+				8364BDE88E259E75BC5C26E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Instacart;
+			productName = Instacart;
+			productReference = D894D3442980498400FCD27C /* Instacart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D894D3592980498D00FCD27C /* InstacartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D894D3712980498D00FCD27C /* Build configuration list for PBXNativeTarget "InstacartTests" */;
+			buildPhases = (
+				C0EF3DB300E2C21572912921 /* [CP] Check Pods Manifest.lock */,
+				D894D3562980498D00FCD27C /* Sources */,
+				D894D3572980498D00FCD27C /* Frameworks */,
+				D894D3582980498D00FCD27C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D894D35C2980498D00FCD27C /* PBXTargetDependency */,
+			);
+			name = InstacartTests;
+			productName = InstacartTests;
+			productReference = D894D35A2980498D00FCD27C /* InstacartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D894D3632980498D00FCD27C /* InstacartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D894D3742980498D00FCD27C /* Build configuration list for PBXNativeTarget "InstacartUITests" */;
+			buildPhases = (
+				350472AD67B8B64556C98749 /* [CP] Check Pods Manifest.lock */,
+				D894D3602980498D00FCD27C /* Sources */,
+				D894D3612980498D00FCD27C /* Frameworks */,
+				D894D3622980498D00FCD27C /* Resources */,
+				B717A18535D2D166E50B3C41 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D894D3662980498D00FCD27C /* PBXTargetDependency */,
+			);
+			name = InstacartUITests;
+			productName = InstacartUITests;
+			productReference = D894D3642980498D00FCD27C /* InstacartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D894D33C2980498400FCD27C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D894D3432980498400FCD27C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D894D3592980498D00FCD27C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D894D3432980498400FCD27C;
+					};
+					D894D3632980498D00FCD27C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D894D3432980498400FCD27C;
+					};
+				};
+			};
+			buildConfigurationList = D894D33F2980498400FCD27C /* Build configuration list for PBXProject "Instacart" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D894D33B2980498400FCD27C;
+			productRefGroup = D894D3452980498400FCD27C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D894D3432980498400FCD27C /* Instacart */,
+				D894D3592980498D00FCD27C /* InstacartTests */,
+				D894D3632980498D00FCD27C /* InstacartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D894D3422980498400FCD27C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D894D3542980498C00FCD27C /* LaunchScreen.storyboard in Resources */,
+				D894D3512980498C00FCD27C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D894D3582980498D00FCD27C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D894D3622980498D00FCD27C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		350472AD67B8B64556C98749 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instacart-InstacartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55DF7D6BD3D45A8430F01A59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instacart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8364BDE88E259E75BC5C26E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instacart/Pods-Instacart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instacart/Pods-Instacart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instacart/Pods-Instacart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B717A18535D2D166E50B3C41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instacart-InstacartUITests/Pods-Instacart-InstacartUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instacart-InstacartUITests/Pods-Instacart-InstacartUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instacart-InstacartUITests/Pods-Instacart-InstacartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0EF3DB300E2C21572912921 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstacartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D894D3402980498400FCD27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D894D37F29804AEC00FCD27C /* Question.swift in Sources */,
+				D894D38429804B9D00FCD27C /* Service.swift in Sources */,
+				D894D38729804E2100FCD27C /* Network.swift in Sources */,
+				D894D34C2980498500FCD27C /* ViewController.swift in Sources */,
+				D894D38A29806A5C00FCD27C /* Router.swift in Sources */,
+				D87BF78B2980CBDE00857DB4 /* ImageCellViewModel.swift in Sources */,
+				D894D3482980498500FCD27C /* AppDelegate.swift in Sources */,
+				D894D34A2980498500FCD27C /* SceneDelegate.swift in Sources */,
+				D894D38129804B2400FCD27C /* ViewModel.swift in Sources */,
+				D894D37D29804AD100FCD27C /* Answer.swift in Sources */,
+				D894D38D29806FE800FCD27C /* ImageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D894D3562980498D00FCD27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D894D35F2980498D00FCD27C /* InstacartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D894D3602980498D00FCD27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D894D36B2980498D00FCD27C /* InstacartUITestsLaunchTests.swift in Sources */,
+				D894D3692980498D00FCD27C /* InstacartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D894D35C2980498D00FCD27C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D894D3432980498400FCD27C /* Instacart */;
+			targetProxy = D894D35B2980498D00FCD27C /* PBXContainerItemProxy */;
+		};
+		D894D3662980498D00FCD27C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D894D3432980498400FCD27C /* Instacart */;
+			targetProxy = D894D3652980498D00FCD27C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D894D3522980498C00FCD27C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D894D3532980498C00FCD27C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D894D36C2980498D00FCD27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D894D36D2980498D00FCD27C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D894D36F2980498D00FCD27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1235A530949AA8890A58AF89 /* Pods-Instacart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 757NRQCW2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instacart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushi.Instacart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D894D3702980498D00FCD27C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AF8C89B1497B5D3314E6C1 /* Pods-Instacart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 757NRQCW2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instacart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushi.Instacart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D894D3722980498D00FCD27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657D9EE3A19B0465B476805D /* Pods-InstacartTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 757NRQCW2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushi.InstacartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instacart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Instacart";
+			};
+			name = Debug;
+		};
+		D894D3732980498D00FCD27C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BF1B93C005CC2E1956A400 /* Pods-InstacartTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 757NRQCW2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushi.InstacartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instacart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Instacart";
+			};
+			name = Release;
+		};
+		D894D3752980498D00FCD27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEAF48D6CFF3346DC3540870 /* Pods-Instacart-InstacartUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 757NRQCW2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushi.InstacartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instacart;
+			};
+			name = Debug;
+		};
+		D894D3762980498D00FCD27C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545F9DACB3EFEA300EE30F45 /* Pods-Instacart-InstacartUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 757NRQCW2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushi.InstacartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instacart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D894D33F2980498400FCD27C /* Build configuration list for PBXProject "Instacart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D894D36C2980498D00FCD27C /* Debug */,
+				D894D36D2980498D00FCD27C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D894D36E2980498D00FCD27C /* Build configuration list for PBXNativeTarget "Instacart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D894D36F2980498D00FCD27C /* Debug */,
+				D894D3702980498D00FCD27C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D894D3712980498D00FCD27C /* Build configuration list for PBXNativeTarget "InstacartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D894D3722980498D00FCD27C /* Debug */,
+				D894D3732980498D00FCD27C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D894D3742980498D00FCD27C /* Build configuration list for PBXNativeTarget "InstacartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D894D3752980498D00FCD27C /* Debug */,
+				D894D3762980498D00FCD27C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D894D33C2980498400FCD27C /* Project object */;
+}
